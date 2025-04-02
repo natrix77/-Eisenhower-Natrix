@@ -18,6 +18,16 @@
             margin: 0 auto;
             padding: 20px;
         }
+        .logo-container {
+            text-align: center;
+            padding: 15px 0;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .logo {
+            height: 60px;
+            cursor: pointer;
+        }
         .header {
             background-color: #2f4f4f;
             color: white;
@@ -51,19 +61,25 @@
         }
         .cta-button {
             display: inline-block;
-            background-color: #2f4f4f;
+            background-color: #ff6b6b;
             color: white;
-            padding: 15px 30px;
+            padding: 18px 36px;
             text-decoration: none;
-            border-radius: 5px;
-            margin: 20px 0;
-            transition: background-color 0.3s;
+            border-radius: 50px;
+            margin: 25px 0;
+            transition: all 0.3s;
             border: none;
-            font-size: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
             cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .cta-button:hover {
-            background-color: #1d3030;
+            background-color: #ff5252;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
         }
         .matrix-diagram {
             text-align: center;
@@ -95,10 +111,16 @@
     </style>
 </head>
 <body>
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="eisenhower-matrix-logo.png" alt="Eisenhower Matrix Logo" class="logo">
+        </a>
+    </div>
+    
     <div class="header">
         <h1>Eisenhower Matrix Task Manager</h1>
         <p>Prioritize what matters. Organize your time. Achieve more.</p>
-        <a href="https://your-streamlit-app-url.streamlit.app" class="cta-button">Launch App</a>
+        <a href="https://your-streamlit-app-url.streamlit.app" class="cta-button">Launch App Now</a>
     </div>
 
     <div class="container">
